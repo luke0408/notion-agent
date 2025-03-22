@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="/assets/agentica.svg">
+    <title>Agentica + NestJS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css">
+</head>
+<body class="relative min-h-screen">
+    <!-- Shared Background -->
+    <div class="fixed inset-0 bg-gradient-to-br from-zinc-900 via-slate-900 to-neutral-900"></div>
+    <div class="fixed inset-0 opacity-[0.07] bg-[radial-gradient(#94a3b8_1px,transparent_1px)] [background-size:16px_16px]"></div>
+
+    <!-- Content -->
+    <div class="relative flex w-full min-h-screen">
+        <div class="hidden md:flex md:flex-1">
+            <section class="flex-1 flex flex-col items-center justify-center p-8 relative">
+                <div class="space-y-8">
+                    <div class="flex gap-8 items-center justify-center">
+                        <a href="https://wrtnlabs.io/agentica/" target="_blank" rel="noopener noreferrer" class="transition-all">
+                            <img src="/assets/agentica.svg" alt="Agentica logo" class="w-24 h-24 transition-all hover:filter hover:drop-shadow-[0_0_1rem_rgba(255,255,255,0.5)]">
+                        </a>
+                        <span class="text-4xl font-bold text-gray-500">+</span>
+                        <a href="https://nestjs.com/" target="_blank" rel="noopener noreferrer" class="transition-all">
+                            <img src="/assets/nestjs.svg" alt="NestJS logo" class="w-24 h-24 transition-all hover:filter hover:drop-shadow-[0_0_1rem_#ea2868]">
+                        </a>
+                    </div>
+
+                    <div class="space-y-4 text-center">
+                        <h1 class="text-4xl font-bold bg-gradient-to-r from-gray-100 to-white bg-clip-text text-transparent">
+                            Agentica + NestJS
+                        </h1>
+                        <p class="text-lg text-gray-400 max-w-md">
+                            Experience the power of AI-driven conversations with Agentica,
+                            seamlessly integrated with NestJS's modern server framework.
+                        </p>
+                    </div>
+
+                    <div class="flex gap-4 justify-center">
+                        <a href="https://wrtnlabs.io/agentica/docs" rel="noopener noreferrer" class="px-6 py-2 bg-white text-zinc-900 font-semibold rounded-lg hover:bg-gray-100 transition-all shadow-md hover:shadow-lg">
+                            Documentation
+                        </a>
+                        <a href="https://github.com/wrtnlabs/agentica" target="_blank" rel="noopener noreferrer" class="px-6 py-2 border border-gray-700 bg-transparent text-gray-300 rounded-lg hover:bg-white/5 transition-all">
+                            GitHub
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="flex-1">
+            <div class="flex-1 flex flex-col items-center justify-center p-4 md:p-8">
+                <div class="relative w-full h-[calc(100vh-2rem)] md:h-[calc(100vh-4rem)]">
+                    <div class="h-full flex flex-col bg-zinc-800/50 backdrop-blur-md rounded-2xl overflow-hidden border border-zinc-700/30">
+                        <div id="messages-container" class="flex-1 overflow-y-auto p-6 space-y-6 scroll-smooth">
+                            <!-- Messages will be added here -->
+                        </div>
+                        <div class="p-4">
+                            <form id="chat-form" class="flex gap-2">
+                                <textarea
+                                    id="message-input"
+                                    placeholder="Type a message..."
+                                    class="flex-1 min-h-[44px] max-h-[160px] p-3 bg-zinc-700/50 text-gray-100 placeholder:text-gray-400 rounded-xl resize-none focus:outline-none focus:ring-1 focus:ring-white/20"
+                                ></textarea>
+                                <button
+                                    type="submit"
+                                    class="px-4 py-2 bg-white/10 text-white rounded-xl hover:bg-white/20 focus:outline-none focus:ring-2 focus:ring-white/20 focus:ring-offset-2 focus:ring-offset-zinc-800 disabled:opacity-50 disabled:cursor-not-allowed"
+                                >
+                                    Send
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/9.1.6/marked.min.js"></script>
+    <script type="module" src="./script.js"></script>
+    <script src="./module/tstl.umd.js"></script>
+    <script src="./module/tgrid.umd.js"></script>
+</body>
+</html>
