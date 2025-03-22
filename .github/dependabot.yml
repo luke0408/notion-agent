@@ -1,0 +1,60 @@
+version: 2
+updates:
+  - package-ecosystem: 'npm'
+    directory: '/'
+    schedule:
+      interval: 'daily'
+    open-pull-requests-limit: 25
+    versioning-strategy: increase
+    allow:
+      - dependency-name: "nestia"
+      - dependency-name: "@nestia/*"
+      - dependency-name: "@nestjs/*"
+      - dependency-name: "@agentica/*"
+      - dependency-name: "@wrtnlabs/*"
+      - dependency-name: "@samchon/openapi"
+      - dependency-name: "openai"
+      - dependency-name: "tstl"
+      - dependency-name: "typia"
+      - dependency-name: "tgrid"
+      - dependency-name: "typescript"
+      - dependency-name: "typescript-transform-paths"
+      - dependency-name: "ts-patch"
+    groups:
+      Samchon:
+        patterns:
+          - "@nestia/*"
+          - "@samchon/openapi"
+          - "nestia"
+          - "tstl"
+          - "typia"
+          - "tgrid"
+      NestJS:
+        patterns:
+          - "@nestjs/*"
+      TypeScript:
+        patterns:
+          - "typescript"
+          - "typescript-transform-paths"
+          - "ts-patch"
+      WrtnLabs:
+        patterns:
+          - "@wrtnlabs/*"
+          - "@agentica/*"
+      OpenAI:
+        patterns:
+          - "openai"
+  - package-ecosystem: 'npm'
+    directory: '/packages/api'
+    schedule:
+      interval: 'daily'
+    open-pull-requests-limit: 25
+    versioning-strategy: increase
+    allow:
+      - dependency-name: "@nestia/fetcher"
+      - dependency-name: "typia"
+    groups:
+      Samchon:
+        patterns:
+          - "@nestia/fetcher"
+          - "typia"
