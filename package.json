@@ -1,0 +1,19 @@
+{
+  "name": "notion-agent",
+  "version": "0.0.1",
+  "description": "agent code for notion",
+  "main": "main.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luke0408/notion-agent.git"
+  },
+  "author": "luke0408",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/luke0408/notion-agent/issues"
+  },
+  "homepage": "https://github.com/luke0408/notion-agent#readme"
+}
