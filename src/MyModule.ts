@@ -3,7 +3,7 @@ import { ServeStaticModule } from "@nestjs/serve-static";
 import { join } from "path";
 
 import { BbsArticleModule } from "./controllers/bbs/BbsArticleModule";
-import { ChatModule } from "./controllers/chat/ChatModule";
+import { ChatModule } from "./controllers/notion/NotionModule";
 
 @Module({
   imports: [
