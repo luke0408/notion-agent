@@ -14,7 +14,7 @@ import typia from "typia";
 import { MyGlobal } from "../../MyGlobal";
 
 @Controller("chat")
-export class MyChatController {
+export class NotionController {
   @WebSocketRoute()
   public async start(
     @WebSocketRoute.Acceptor()
