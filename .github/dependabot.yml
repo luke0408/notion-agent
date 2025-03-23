@@ -13,6 +13,8 @@ updates:
       - dependency-name: "@agentica/*"
       - dependency-name: "@wrtnlabs/*"
       - dependency-name: "@samchon/openapi"
+      - dependency-name: "express"
+      - dependency-name: "swagger-ui-express"
       - dependency-name: "openai"
       - dependency-name: "tstl"
       - dependency-name: "typia"
@@ -29,6 +31,10 @@ updates:
           - "tstl"
           - "typia"
           - "tgrid"
+      Express:
+        patterns:
+          - "express"
+          - "swagger-ui-express"
       NestJS:
         patterns:
           - "@nestjs/*"
