@@ -66,7 +66,7 @@
     "serialize-error": "^4.1.0",
     "tgrid": "^1.1.0",
     "tstl": "^3.0.0",
-    "typia": "^8.0.2",
+    "typia": "^8.0.4",
     "uuid": "^9.0.0"
   },
   "devDependencies": {
