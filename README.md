@@ -8,7 +8,7 @@
   - [3.1. Chat with Notion Page](#31-chat-with-notion-page)
 - [4. Appendix](#4-appendix)
   - [4.1. NPM Run Commands](#41-npm-run-commands)
-  - [4.2. Direcories](#42-direcories)
+  - [4.2. Directories](#42-directories)
 
 ## 1. Outline
 
@@ -22,4 +22,4 @@
 
 ### 4.1. NPM Run Commands
 
-### 4.2 Direcories
+### 4.2 Directories
