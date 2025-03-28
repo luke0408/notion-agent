@@ -6,16 +6,15 @@ import {
 } from "@agentica/rpc";
 import { WebSocketRoute } from "@nestia/core";
 import { Controller } from "@nestjs/common";
-import { HttpLlm, OpenApi } from "@samchon/openapi";
+import { NotionService } from "@wrtnlabs/connector-notion";
 import OpenAI from "openai";
 import { WebSocketAcceptor } from "tgrid";
 import typia from "typia";
 
-import { MyConfiguration } from "../../MyConfiguration";
 import { MyGlobal } from "../../MyGlobal";
 
 @Controller("chat")
-export class MyChatController {
+export class NotionController {
   @WebSocketRoute()
   public async start(
     @WebSocketRoute.Acceptor()
@@ -33,19 +32,12 @@ export class MyChatController {
       },
       controllers: [
         {
-          protocol: "http",
-          name: "bbs",
-          application: HttpLlm.application({
-            model: "chatgpt",
-            document: OpenApi.convert(
-              await fetch(
-                `http://localhost:${MyConfiguration.API_PORT()}/editor/swagger.json`,
-              ).then((r) => r.json()),
-            ),
+          name: "Notion Connector",
+          protocol: "class",
+          application: typia.llm.application<NotionService, "chatgpt">(),
+          execute: new NotionService({
+            secret: MyGlobal.env.NOTION_SECRET_KEY,
           }),
-          connection: {
-            host: `http://localhost:${MyConfiguration.API_PORT()}`,
-          },
         },
       ],
     });

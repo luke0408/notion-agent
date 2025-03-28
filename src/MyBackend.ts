@@ -15,7 +15,9 @@ export class MyBackend {
     // OPEN THE BACKEND SERVER
     //----
     // MOUNT CONTROLLERS
-    this.application_ = await NestFactory.create(MyModule, { logger: false });
+    this.application_ = await NestFactory.create(MyModule, {
+      logger: ["log", "debug", "error", "warn"],
+    });
     await WebSocketAdaptor.upgrade(this.application_);
 
     // THE SWAGGER EDITOR
@@ -32,7 +34,7 @@ export class MyBackend {
       path: "editor",
       application: this.application_,
       swagger: document as any,
-      package: "Shopping Backend",
+      package: "Notion Backend",
       simulate: true,
       e2e: true,
     });

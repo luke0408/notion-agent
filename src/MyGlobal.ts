@@ -14,6 +14,7 @@ export namespace MyGlobal {
   export interface IEnvironments {
     API_PORT: `${number}`;
     OPENAI_API_KEY: string;
+    NOTION_SECRET_KEY: string;
   }
 }
 
