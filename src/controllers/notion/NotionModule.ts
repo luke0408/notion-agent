@@ -5,4 +5,4 @@ import { NotionController } from "./NotionController";
 @Module({
   controllers: [NotionController],
 })
-export class ChatModule {}
+export class NotionModule {}
