@@ -67,7 +67,7 @@
     "sharp": "^0.34.0",
     "tgrid": "^1.1.0",
     "tstl": "^3.0.0",
-    "typia": "^8.1.1",
+    "typia": "^8.2.0",
     "uuid": "^9.0.0"
   },
   "devDependencies": {
