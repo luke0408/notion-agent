@@ -56,7 +56,7 @@
     "@nestjs/core": "^11.0.12",
     "@nestjs/platform-express": "^11.0.12",
     "@nestjs/serve-static": "^5.0.3",
-    "@samchon/openapi": "^3.2.3",
+    "@samchon/openapi": "^3.3.0",
     "@wrtnlabs/connector-notion": "0.1.485",
     "commander": "10.0.0",
     "dotenv": "^16.3.1",
