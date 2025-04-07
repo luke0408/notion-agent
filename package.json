@@ -64,7 +64,7 @@
     "inquirer": "8.2.5",
     "openai": "^4.91.1",
     "serialize-error": "^4.1.0",
-    "sharp": "^0.34.0",
+    "sharp": "^0.34.1",
     "tgrid": "^1.1.0",
     "tstl": "^3.0.0",
     "typia": "^8.2.0",
