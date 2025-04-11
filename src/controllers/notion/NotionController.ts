@@ -36,7 +36,7 @@ export class NotionController {
           protocol: "class",
           application: typia.llm.application<NotionService, "chatgpt">(),
           execute: new NotionService({
-            secret: MyGlobal.env.NOTION_SECRET_KEY,
+            notionApiKey: MyGlobal.env.NOTION_SECRET_KEY,
           }),
         },
       ],
