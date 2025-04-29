@@ -46,8 +46,8 @@
     "boilerplate"
   ],
   "dependencies": {
-    "@agentica/core": "^0.20.0",
-    "@agentica/rpc": "^0.20.0",
+    "@agentica/core": "^0.21.0",
+    "@agentica/rpc": "^0.21.0",
     "@nestia/core": "^6.0.1",
     "@nestia/editor": "^6.0.1",
     "@nestia/fetcher": "^6.0.1",
@@ -57,7 +57,7 @@
     "@nestjs/platform-express": "^11.1.0",
     "@nestjs/serve-static": "^5.0.3",
     "@samchon/openapi": "^4.2.0",
-    "@wrtnlabs/connector-notion": "0.1.505",
+    "@wrtnlabs/connector-notion": "0.1.506",
     "commander": "10.0.0",
     "dotenv": "^16.3.1",
     "dotenv-expand": "^10.0.0",
