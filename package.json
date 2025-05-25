@@ -46,8 +46,8 @@
     "boilerplate"
   ],
   "dependencies": {
-    "@agentica/core": "^0.23.0",
-    "@agentica/rpc": "^0.23.0",
+    "@agentica/core": "^0.27.3",
+    "@agentica/rpc": "^0.27.3",
     "@nestia/core": "^6.0.4",
     "@nestia/editor": "^6.0.4",
     "@nestia/fetcher": "^6.0.1",
