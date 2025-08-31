@@ -46,10 +46,10 @@
     "boilerplate"
   ],
   "dependencies": {
-    "@agentica/core": "^0.30.2",
-    "@agentica/rpc": "^0.30.2",
     "@nestia/core": "^7.1.1",
     "@nestia/editor": "^7.1.1",
+    "@agentica/core": "^0.30.3",
+    "@agentica/rpc": "^0.30.3",
     "@nestia/fetcher": "^7.0.0",
     "@nestia/sdk": "^7.1.1",
     "@nestjs/common": "^11.1.3",
@@ -62,7 +62,7 @@
     "dotenv": "^16.3.1",
     "dotenv-expand": "^10.0.0",
     "inquirer": "8.2.5",
-    "openai": "^5.9.0",
+    "openai": "^5.9.1",
     "serialize-error": "^4.1.0",
     "sharp": "^0.34.3",
     "tgrid": "^1.2.0",
